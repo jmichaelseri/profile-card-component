@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-1:hsl(185, 75%, 39%);
+    --primary-color-2:hsl(229, 23%, 23%);
+    --primary-color-3:hsl(227, 10%, 46%);
+    --neutral:hsl(0, 0%, 59%);
+    --name-and-stats-size: 18px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
