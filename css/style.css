@@ -11,5 +11,92 @@
     --neutral:hsl(0, 0%, 59%);
     --name-and-stats-size: 18px;
 }
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--primary-color-1);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card {
+    width: 325px;
+    border-radius: 10px;
+    background-color: white;
+    height: auto;
+    display: grid;
+}
+
+.background-img {
+    background-image: url("/images/bg-pattern-card.svg");
+    background-size: cover;
+    height: 125px;
+    border-top-right-radius: 10px;
+    border-top-left-radius:  10px;
+}
+
+.image {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: -3rem auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-area: image;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3rem 30px 30px;
+    grid-template-areas: ". image ."
+                         ". name age"
+                         ". city .";
+}
+
+.name {
+    grid-area: name;
+    padding-top: 2rem;
+    font-size: var(--name-and-stats-size);
+}
+
+.city {
+    grid-area: city;
+    padding-top: 2rem;
+    place-self: center;
+    color: var(--neutral);
+}
+
+.age {
+    grid-area: age;
+    padding-top: 2.1rem;
+    color: var(--neutral);
+}
+
+.stat-section {
+    padding: 3rem 0 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub {
+    text-align: center;
+}
+
+.number {
+    font-size: var(--name-and-stats-size);
+}
+
+.number-heading {
+    color: var(--neutral);
+    padding: 0.5rem;
+    font-size: small;
+    font-weight: 400;
+}
