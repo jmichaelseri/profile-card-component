@@ -14,25 +14,32 @@
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+     position: absolute;
+     bottom: 0;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
 
 .container {
     height: 100vh;
     display: grid;
     place-items: center;
+    align-content: center;
     background-color: var(--primary-color-1);
     font-family: 'Kumbh Sans', sans-serif;
 }
 
 .card {
-    width: 325px;
+    width: 324px;
     border-radius: 10px;
     background-color: white;
     height: auto;
     display: grid;
+    position: relative;
 }
 
 .background-img {
@@ -104,4 +111,24 @@
     padding: 0.5rem;
     font-size: x-small;
     letter-spacing: 0.12rem;
+}
+
+/* CIRCLES */
+
+
+.circles .main-background-top,
+.circles .main-background-bottom{
+    position: absolute;
+    width: 100%;
+}
+
+.main-background-top {
+    /* top: -150px;
+    left: -200px; */
+    object-position: left top;
+}
+.main-background-bottom {
+    /* bottom: -150px;
+    right: -200px; */
+    object-position: right bottom;
 }
