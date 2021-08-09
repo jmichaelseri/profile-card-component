@@ -114,7 +114,7 @@
 }
 
 /* CIRCLES */
-
+/* this is a comment from vim*/
 
 .circles .main-background-top,
 .circles .main-background-bottom{
@@ -127,6 +127,7 @@
     left: -200px; */
     object-position: left top;
 }
+
 .main-background-bottom {
     /* bottom: -150px;
     right: -200px; */
